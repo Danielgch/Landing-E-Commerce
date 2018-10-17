@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>E-Commerce</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="Ecommerce.css" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+    <div class="navbar container">
+        <nav class="navbar navbar-inverse navbar-static-top navbar-fixed-top" role="navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">E-Commerce</a>
+            </div>
+            <div class="collapse navbar-collapse ">
+                <ul class="nav navbar-nav navbar-right visible-xs visible-lg visible-md visible-sm ">
+                    <li class="dropdown">
+                        <a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Canasta</a>
+                    </li>               
+                    <li>
+                        <a  href="#"> Salir</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <!--Barra navegador-->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <!--BARRA IZQ BUSQUEDA-->
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Buscar camisetas" name="q">
+                    <div class="input-group-btn">
+                        <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                    </div>
+                </div>
+                <!--BARRA IZQ LISTA CATEGORIAS-->
+                <div class="list-group hidden-xs hidden-sm">
+                    <h1>Categorias</h1>                   
+                    <a href="#" class="list-group-item active">Todos<span class="badge">100</span></a>
+                    <a href="#" class="list-group-item">Hombre<span class="badge">4</span></a>
+                    <a href="#" class="list-group-item">Mujer<span class="badge">12</span></a>
+                    <a href="#" class="list-group-item">Hipster<span class="badge">24</span></a>
+                    <a href="#" class="list-group-item">Metal<span class="badge">6</span></a>
+                    <a href="#" class="list-group-item">Universidad<span class="badge">5</span></a>
+                    <a href="#" class="list-group-item">Deportiva<span class="badge">8</span></a>
+                    <a href="#" class="list-group-item">Rayas<span class="badge">11</span></a>
+                    <a href="#" class="list-group-item">Apretada<span class="badge">19</span></a>
+                </div>
+            </div>
+            <!--CONTENIDO DER -->
+            <div class="col-md-8">              
+                    <!--BANNER-->
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel" data-slide-to="1"></li>
+                            <li data-target="#myCarousel" data-slide-to="2"></li>
+                        </ol>
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <img src="banner-slider-1.jpg" alt="Los Angeles" style="width:100%;">
+                            </div>
+                            <div class="item">
+                                <img src="banner-slider-2.jpg" alt="Chicago" style="width:100%;">
+                            </div>
+                            <div class="item">
+                                <img src="banner-slider-3.jpg" alt="New york" style="width:100%;">
+                            </div>
+                        </div>
+                        <!-- Left and right controls -->
+                        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>                   
+                    <div class="row topCard">
+                        <div class="col-xs-6 col-sm-6 col-md-4">
+                            <div class="thumbnail">
+                                        <img class="card-img-top" src="Productos/camiseta-1.jpg" alt="Card image cap">
+                                        <div class="card-body bodycard">
+                                            <h4 class="card-title">Hipster Ultimate</h4>
+                                            <p class="card-text">La camiseta ideal para hipster</p>
+                                            <a href="#" class="btn btn-primary">$229</a>
+                                            <a href="#" class="btn btn-default" data-toggle="modal" data-target="#Modal1">Detalles</a>                                            
+                                        </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-sm-6 col-md-4">
+                            <div class="thumbnail">
+                                        <img class="card-img-top" src="Productos/camiseta-2.jpg" alt="Card image cap">
+                                        <div class="card-body bodycard">
+                                            <h4 class="card-title">On Motion live</h4>
+                                            <p class="card-text">Perfecta para salidas rocosas.</p>
+                                            <a href="#" class="btn btn-primary">$229</a>
+                                            <a href="#" class="btn btn-default" data-toggle="modal" data-target="#Modal1">Detalles</a>
+                                        </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-sm-6 col-md-4">
+                                <div class="thumbnail">
+                                            <img class="card-img-top" src="Productos/camiseta-3.jpg" alt="Card image cap">
+                                            <div class="card-body bodycard">
+                                                <h4 class="card-title">On Motion live</h4>
+                                                <p class="card-text">Perfecta para salidas rocosas.</p>
+                                                <a href="#" class="btn btn-primary">$229</a>
+                                                <a href="#" class="btn btn-default" data-toggle="modal" data-target="#Modal1">Detalles</a>
+                                            </div>
+                                </div>
+                        </div>                        
+                    </div>   
+                    
+                    <div class="row"><div class="col-xs-6 col-sm-6 col-md-4">
+                            <div class="thumbnail">
+                                        <img class="card-img-top" src="Productos/camiseta-4.jpg" alt="Card image cap">
+                                        <div class="card-body bodycard">
+                                            <h5 class="card-title">Card title</h5>
+                                            <p class="card-text">Some quick example .</p>
+                                            <a href="#" class="btn btn-primary">$229</a>
+                                            <a href="#" class="btn btn-default" data-toggle="modal" data-target="#Modal1">Detalles</a>
+                                        </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-sm-6 col-md-4">
+                            <div class="thumbnail">
+                                        <img class="card-img-top" src="Productos/camiseta-5.jpg" alt="Card image cap">
+                                        <div class="card-body bodycard">
+                                            <h5 class="card-title">Underground Max</h5>
+                                            <p class="card-text">Para los amantes del underground.</p>
+                                            <a href="#" class="btn btn-primary">$229</a>
+                                            <a href="#" class="btn btn-default" data-toggle="modal" data-target="#Modal1">Detalles</a>
+                                        </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div> 
+
+    <!--MODAL 1-->
+    <div class="modal fade" id="Modal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title">Hipster Ultimate</h2>
+            </div>           
+            <div class="modal-body"> 
+
+                <div class="alert alert-info">
+                    Este producto esta agotado
+                </div>
+                <div class="row">
+                <div class=" col-md-6 align-left">                   
+                    <img class="img-thumbnail" src="Productos/camiseta-1.jpg"
+                        alt="Card image cap"> 
+                </div>
+                <div class=" col-md-6">                   
+                       <h5>Precio: <strong>$299</strong></h5>
+                       <h5>Calificación: <span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span> <span class="
+                        glyphicon glyphicon-star-empty"></span>  </h5>
+                        <span class="label label-warning">Hipster</span>
+                        <span class="label label-default">Deportiva</span>
+                        <h6><span class="glyphicon glyphicon-heart"></span> Agregar a los deseos  </h6>
+
+
+                </div>
+                </div>  
+                <div class="topCard" >
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item active">
+                            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home"
+                                >Descripción</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile"
+                                aria-selected="false">Comentarios</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis eligendi consequuntur facere
+                                dignissimos voluptas soluta natus repellendus autem rerum non esse est eaque modi vero, aliquid
+                                consectetur quos tempora voluptatem.
+                            </p>
+                        </div>
+                        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">                                             
+                            <div class="panel panel-default">                             
+                                <div class="panel-heading">German escobar comento hace 2 días</div>
+                                    <div class="panel-body">
+                                        <p>Está camiseta está increible la quiero</p>
+                                    </div>                
+                                                                     
+                            </div>
+                            <textarea name="" id="input" class="form-control" rows="3" placeholder="Ingresa tu comentario"required="required"></textarea>
+                        </div>
+                        
+                    </div>
+                </div>                      
+               
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-primary">Comprar</button>
+            </div>
+        </div>
+    </div>
+</div>    
+</body>
+</html>
